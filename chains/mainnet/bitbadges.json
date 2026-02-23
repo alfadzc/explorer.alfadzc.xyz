@@ -1,0 +1,43 @@
+{
+  "chain_name": "bitbadges",
+  "chain_id": "bitbadges-1",
+  "registry_name": "bitbadges",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://rpc.bitbadges.io",
+      "provider": "Bitbadges"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://lcd.bitbadges.io",
+      "provider": "Bitbadges"
+    }
+  ],
+  "sdk_version": "0.38.19",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "cosmos",
+  "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitbadges/images/bitbadgeslogo.png",
+  "assets": [
+    {
+      "base": "ubadge",
+      "symbol": "BADGE",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitbadges/images/bitbadgeslogo.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

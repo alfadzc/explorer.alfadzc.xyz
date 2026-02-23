@@ -1,0 +1,43 @@
+{
+  "chain_name": "empeiria",
+  "chain_id": "empe-testnet-2",
+  "registry_name": "empeiria",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://empeiria-testnet-rpc.itrocket.net",
+      "provider": "Itrocket"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://empeiria-testnet-api.itrocket.net",
+      "provider": "Itrocket"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "empe",
+  "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/empeiria/images/empe.png",
+  "assets": [
+    {
+      "base": "uempe",
+      "symbol": "EMPE",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/empeiria/images/empe.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

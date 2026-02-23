@@ -1,0 +1,47 @@
+{
+  "chain_name": "pushchain",
+  "chain_id": "push_42101-1",
+  "registry_name": "pushchain",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://rpc-t.pushchain.nodestake.org",
+      "provider": "Nodestake"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://api-t.pushchain.nodestake.org",
+      "provider": "Nodestake"
+    },
+    {
+      "address": "https://api-test.pchain.vinjan-inc.com",
+      "provider": "Vinjan.Inc"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "push",
+  "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/pushchain/images/push.png",
+  "assets": [
+    {
+      "base": "upush",
+      "symbol": "PUSH",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/pushchain/images/push.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

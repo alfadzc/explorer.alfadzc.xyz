@@ -1,0 +1,43 @@
+{
+  "chain_name": "lumen",
+  "chain_id": "lumen",
+  "registry_name": "lumen",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://rpc.lumen.chaintools.tech:443",
+      "provider": "Chaintools"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://api.lumen.chaintools.tech:443",
+      "provider": "Chaintools"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "lumen",
+  "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumen/images/lumen.png",
+  "assets": [
+    {
+      "base": "ulumen",
+      "symbol": "LUMEN",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumen/images/lumen.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

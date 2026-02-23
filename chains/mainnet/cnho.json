@@ -1,0 +1,43 @@
+{
+  "chain_name": "cnho",
+  "chain_id": "cnho-1",
+  "registry_name": "cnhostables",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://rpc.cnho.io",
+      "provider": "Cnho"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://lcd.cnho.io",
+      "provider": "Cnho"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "cnho",
+  "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cnhostables/images/chain.png",
+  "assets": [
+    {
+      "base": "ucnho",
+      "symbol": "CNHO",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cnhostables/images/chain.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

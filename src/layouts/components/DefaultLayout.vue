@@ -92,8 +92,12 @@ const show_ad = computed(() => {
     >
       <div class="flex justify-between mt-1 pl-4 py-4 mb-1">
         <RouterLink to="/" class="flex items-center">
-          <img class="w-10 h-10" src="../../assets/logo.svg" />
-          <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">Ping.pub</h1>
+          <div class="flex items-center">
+            <div class="flex flex-col items-center">
+              <img class="w-10 h-10 rounded-full" src="../../assets/logo.png" />
+            </div>
+            <span class="ml-3 text-2xl font-semibold" style="color: #8B2FC9;">Ping.pub</span>
+          </div>
         </RouterLink>
         <div
           class="pr-4 cursor-pointer xl:!hidden"
@@ -296,7 +300,7 @@ const show_ad = computed(() => {
         <NavBarWallet />
       </div>
 
-      <!-- 👉 Pages -->
+      <!-- Pages -->
       <div style="min-height: calc(100vh - 180px)">
         <div v-if="behind" class="alert alert-error mb-4">
           <div class="flex gap-2">

@@ -1,0 +1,43 @@
+{
+  "chain_name": "safrochain",
+  "chain_id": "safro-testnet-1",
+  "registry_name": "safrochain",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://rpc.testnet.safrochain.com",
+      "provider": "Safrochain"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://rest.testnet.safrochain.com",
+      "provider": "Safrochain"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "safro",
+  "logo": "https://raw.githubusercontent.com/Safrochain-Org/assets/main/public/png/safohcian_app_icon.png",
+  "assets": [
+    {
+      "base": "usafro",
+      "symbol": "SAFRO",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/Safrochain-Org/assets/main/public/png/safohcian_app_icon.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}
