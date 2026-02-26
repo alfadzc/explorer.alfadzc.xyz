@@ -1,0 +1,47 @@
+{
+  "chain_name": "republic",
+  "chain_id": "raitestnet_77701-1",
+  "registry_name": "Republic-Testnet",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://rpc-t.republicai.nodestake.org",
+      "provider": "Nodestake"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://api-t.republicai.nodestake.org",
+      "provider": "Nodestake"
+    },
+    {
+      "address": "https://api-t.republic.vinjan-inc.com",
+      "provider": "Vinjan.Inc"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "60",
+  "min_tx_fee": "1000",
+  "addr_prefix": "republic",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/republic.png",
+  "assets": [
+    {
+      "base": "arai",
+      "symbol": "RAI",
+      "exponent": "18",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/republic.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}
