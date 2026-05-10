@@ -30,7 +30,7 @@ const blockchain = useBlockchain();
 blockchain.randomSetupEndpoint();
 const baseStore = useBaseStore();
 
-const current = ref(''); // the current chain
+const current = ref('');
 const temp = ref('');
 blockchain.$subscribe((m, s) => {
   if (current.value === s.chainName && temp.value != s.endpoint.address) {
@@ -236,6 +236,11 @@ const show_ad = computed(() => {
           <Icon icon="mdi:twitter" class="text-xl mr-2" />
           <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">Twitter</div>
         </a>
+        <a href="https://alfadzc.xyz" target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]">
+          <Icon icon="mdi:web" class="text-xl mr-2" />
+          <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">Website</div>
+        </a>
         <a v-if="showDiscord" href="https://discord.com/invite/CmjYVSr6GW" target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]">
           <Icon icon="mdi:discord" class="text-xl mr-2" />
@@ -243,7 +248,7 @@ const show_ad = computed(() => {
         </a>
         <a href="https://github.com/ping-pub/explorer/discussions" target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]">
-          <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
+          <Icon icon="mdi:github" class="text-xl mr-2" />
           <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">GitHub</div>
         </a>
       </div>
@@ -260,14 +265,12 @@ const show_ad = computed(() => {
 
         <div class="flex-1 w-0"></div>
 
-        <!-- <NavSearchBar />-->
         <NavBarI18n class="hidden md:!inline-block" />
         <NavbarThemeSwitcher class="!inline-block" />
         <NavbarSearch class="!inline-block" />
         <NavBarWallet />
       </div>
 
-      <!--   Pages -->
       <div style="min-height: calc(100vh - 180px)">
         <div v-if="behind" class="alert alert-error mb-4">
          <div class="flex gap-2">
@@ -280,10 +283,7 @@ const show_ad = computed(() => {
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               ></path>
             </svg>
-            <span
-              >{{ $t('pages.out_of_sync') }} {{ blocktime.format() }} ({{
-                blocktime.fromNow()
-              }})</span>
+            <span>{{ $t('pages.out_of_sync') }} {{ blocktime.format() }} ({{ blocktime.fromNow() }})</span>
           </div>
         </div>
         <RouterView v-slot="{ Component }">
