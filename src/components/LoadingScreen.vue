@@ -64,7 +64,7 @@ onMounted(() => {
           font-size: 13px; letter-spacing: 0.15em;
           color: rgba(255,255,255,1); font-family: monospace;
           display: flex; align-items: center; justify-content: center; gap: 4px;">
-          Please Wait ...
+          Please Wait
           <span class="dot1" style="display: inline-block;">•</span>
           <span class="dot2" style="display: inline-block;">•</span>
           <span class="dot3" style="display: inline-block;">•</span>
