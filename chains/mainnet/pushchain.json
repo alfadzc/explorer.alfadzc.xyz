@@ -1,0 +1,51 @@
+{
+  "chain_name": "pushchain",
+  "chain_id": "push_42101-1",
+  "registry_name": "Pushchain-Testnet",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://rpc-t.pushchain.nodestake.org",
+      "provider": "Nodestake"
+    },
+    {
+      "address": "https://rpc-test.pchain.vinjan-inc.com",
+      "provider": "Vinjan"
+    }    
+  ],
+  "api": [
+    {
+     "address": "https://api-t.pushchain.nodestake.org",
+     "provider": "Nodestake"
+    },  
+    {
+      "address": "https://api-test.pchain.vinjan-inc.com",
+      "provider": "Vinjan"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "60",
+  "min_tx_fee": "1000",
+  "addr_prefix": "push",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/pushchain.png",
+  "assets": [
+    {
+      "base": "upc",
+      "symbol": "PC",
+      "exponent": "18",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/pushchain.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

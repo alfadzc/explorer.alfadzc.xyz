@@ -308,14 +308,14 @@ loadAvatars();
                 :key="v.operator_address"
                 class="hover:bg-gray-100 dark:hover:bg-[#384059]"
               >
-                <!-- 👉 rank -->
+                <!-- � rank -->
                 <td>
                   <div class="text-xs truncate relative px-2 py-1 rounded-full w-fit" :class="`text-${rank}`">
                     <span class="inset-x-0 inset-y-0 opacity-10 absolute" :class="`bg-${rank}`"></span>
                     {{ i + 1 }}
                   </div>
                 </td>
-                <!-- 👉 Validator -->
+                <!-- � Validator -->
                 <td>
                   <div class="flex items-center overflow-hidden" style="max-width: 300px">
                     <div class="avatar mr-4 relative w-8 h-8 rounded-full">
@@ -355,7 +355,7 @@ loadAvatars();
                   </div>
                 </td>
 
-                <!-- 👉 Voting Power -->
+                <!-- � Voting Power -->
                 <td class="text-right">
                   <div class="flex flex-col">
                     <h6 class="text-sm font-weight-medium whitespace-nowrap">
@@ -373,15 +373,15 @@ loadAvatars();
                     <span class="text-xs">{{ format.calculatePercent(v.delegator_shares, staking.totalPower) }}</span>
                   </div>
                 </td>
-                <!-- 👉 24h Changes -->
+                <!-- � 24h Changes -->
                 <td class="text-right text-xs" :class="change24Color(v)">
                   {{ change24Text(v) }}
                 </td>
-                <!-- 👉 commission -->
+                <!-- � commission -->
                 <td class="text-right text-xs">
                   {{ format.formatCommissionRate(v.commission?.commission_rates?.rate) }}
                 </td>
-                <!-- 👉 Action -->
+                <!-- � Action -->
                 <td class="text-center">
                   <div v-if="v.jailed" class="badge badge-error gap-2 text-white">
                     {{ $t('staking.jailed') }}

@@ -1,0 +1,43 @@
+{
+  "chain_name": "paxi",
+  "chain_id": "paxi-mainnet",
+  "registry_name": "paxi",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://mainnet-rpc.paxinet.io",
+      "provider": "Paxi Foundation"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://mainnet-lcd.paxinet.io",
+      "provider": "Paxi Foundation"
+    }
+  ],
+  "sdk_version": "0.5.3",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "paxi",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/paxi.png",
+  "assets": [
+    {
+      "base": "upaxi",
+      "symbol": "PAXI",
+      "exponent": 6,
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/paxi.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

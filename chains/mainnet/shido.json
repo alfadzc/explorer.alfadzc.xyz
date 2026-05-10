@@ -1,0 +1,44 @@
+{
+  "chain_name": "shido",
+  "chain_id": "shido_9008-1",
+  "registry_name": "shido",
+  "coingecko": "shido-2",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://rpc.shidoscan.com",
+      "provider": "ShidoScan"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://swagger.shidoscan.com",
+      "provider": "ShidoScan"
+    }
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "60",
+  "min_tx_fee": "1000",
+  "addr_prefix": "shido",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/shido.png",
+  "assets": [
+    {
+      "base": "shido",
+      "symbol": "SHIDO",
+      "exponent": "18",
+      "coingecko_id": "shido-2",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/shido.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

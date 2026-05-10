@@ -1,0 +1,55 @@
+{
+  "chain_name": "bitbadges",
+  "chain_id": "bitbadges-1",
+  "registry_name": "bitbadges",
+  "network_type": "mainnet",
+  "rpc": [
+    {
+      "address": "https://rpc-bitbadges.alfadzc.xyz",
+      "provider": "Alfadzc"
+    }
+  ],
+  "api": [
+    {
+      "address": "https://rest.cosmos.directory/bitbadges",
+      "provider": "Cosmos"
+    },
+    {
+      "address": "https://api-bitbadges.alfadzc.xyz",
+      "provider": "Alfadzc"
+    },     
+     {
+      "address": "https://lcd.bitbadges.io",
+      "provider": "BitBadges"
+    }    
+  ],
+
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "cosmos",
+
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/bitbadges.png",
+
+  "assets": [
+    {
+      "base": "ubadge",
+      "symbol": "BADGE",
+      "exponent": 9,
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/bitbadges.png"
+    }
+  ],
+
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}

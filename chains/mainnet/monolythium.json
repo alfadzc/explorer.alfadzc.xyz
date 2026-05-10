@@ -1,0 +1,59 @@
+{
+  "chain_name": "mono",
+  "chain_id": "mono_6941-1",
+  "registry_name": "Monolythium-Testnet",
+  "network_type": "testnet",
+  "rpc": [
+     {
+      "address": "https://rpc-test.monolyth.vinjan-inc.com",
+      "provider": "Vinjan"
+    },  
+     {
+      "address": "https://rpc.testnet.mononodes.xyz",
+      "provider": "Monolythium"
+    },     
+    {
+      "address": "https://rpc-t.mono.nodestake.org",
+      "provider": "Nodestake"
+    }
+  ],
+  "api": [
+     {
+      "address": "https://api-test.monolyth.vinjan-inc.com",
+      "provider": "Vinjan"
+    },      
+    {
+      "address": "https://api.testnet.mononodes.xyz",
+      "provider": "Monolythium"
+    },  
+    {
+      "address": "https://api-t.mono.nodestake.org",
+      "provider": "Nodestake"
+    }
+  ],
+  "sdk_version": "0.53.6",
+  "coin_type": "60",
+  "min_tx_fee": "1000",
+  "addr_prefix": "monolythium",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/monolythium.png",
+  "assets": [
+    {
+      "base": "alyth",
+      "symbol": "LYTH",
+      "exponent": "18",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/monolythium.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}
