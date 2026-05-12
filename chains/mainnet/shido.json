@@ -6,14 +6,30 @@
   "network_type": "mainnet",
   "rpc": [
     {
+      "address": "https://shido-rpc.polkachu.com",
+      "provider": "Polkachu"
+    },
+    {
       "address": "https://rpc.shidoscan.com",
-      "provider": "ShidoScan"
-    }
+      "provider": "ShidoScan"    
+    },  
+    {
+      "address": "https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money",
+      "provider": "WhenLambo"
+    }      
   ],
   "api": [
     {
+      "address": "https://shido-api.polkachu.com",
+      "provider": "Polkachu"
+    },
+    {
       "address": "https://swagger.shidoscan.com",
-      "provider": "ShidoScan"
+      "provider": "ShidoScan"    
+    },      
+    {
+      "address": "https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money",
+      "provider": "WhenLambo"
     }
   ],
   "sdk_version": "0.47.0",
