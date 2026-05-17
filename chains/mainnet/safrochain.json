@@ -4,16 +4,12 @@
   "registry_name": "Safrochain-Testnet",
   "network_type": "testnet",
   "rpc": [
-    {
-      "address": "https://rpc.testnet.safrochain.com",
-      "provider": "Safrochain"
-    }
+    {"address": "https://rpc.testnet.safrochain.com", "provider": "Safrochain"},
+    {"address": "https://safrochain-testnet-rpc.linknode.org", "provider": "LinkNode"}
   ],
   "api": [
-    {
-      "address": "https://rest.testnet.safrochain.com",
-      "provider": "Safrochain"
-    }
+    {"address": "https://rest.testnet.safrochain.com", "provider": "Safrochain"},
+    {"address": "https://safrochain-testnet-api.linknode.org", "provider": "LinkNode"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
@@ -36,8 +32,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

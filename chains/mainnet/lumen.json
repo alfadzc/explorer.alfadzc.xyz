@@ -4,16 +4,12 @@
   "registry_name": "lumen",
   "network_type": "mainnet",
   "rpc": [
-    {
-      "address": "https://rpc.lumen.chaintools.tech:443",
-      "provider": "Chaintools"
-    }
+    {"address": "https://lumen-rpc.linknode.org", "provider": "LinkNode"},
+    {"address": "https://rpc.lumen.chaintools.tech:443", "provider": "ChainTool"}
   ],
   "api": [
-    {
-      "address": "https://api.lumen.chaintools.tech:443",
-      "provider": "Chaintools"
-    }
+    {"address": "https://lumen-api.linknode.org", "provider": "LinkNode"},
+    {"address": "https://api.lumen.chaintools.tech:443", "provider": "ChainTool"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
@@ -36,8 +32,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

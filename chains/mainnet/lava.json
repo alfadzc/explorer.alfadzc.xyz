@@ -4,33 +4,17 @@
   "registry_name": "lava",
   "coingecko": "lava-network",
   "network_type": "mainnet",
-  "rpc": [
-    {
-      "address": "https://lava.tendermintrpc.lava.build:443",
-      "provider": "Lava"
-    },
-    {
-      "address": "https://lava-rpc.polkachu.com",
-      "provider": "Polkachu"
-    },
-    {
-      "address": "https://lava-mainnet-rpc.itrocket.net",
-      "provider": "ITRocket"
-    }
+  "rpc": [ 
+    {"address": "https://lava.tendermintrpc.lava.build:443", "provider": "Lava"},
+    {"address": "https://lava-rpc.linknode.org", "provider": "Linknode"},     
+    {"address": "https://lava-rpc.polkachu.com", "provider": "Polkachu"}, 
+    {"address": "https://lava-mainnet-rpc.itrocket.net", "provider": "ITRocket"}
   ],
   "api": [
-    {
-      "address": "https://lava.lava.build",
-      "provider": "Lava"
-    },
-    {
-      "address": "https://lava-api.polkachu.com",
-      "provider": "Polkachu"
-    },
-    {
-      "address": "https://lava-mainnet-api.itrocket.net",
-      "provider": "ITRocket"
-    }
+    {"address": "https://lava.lava.build", "provider": "Lava"}, 
+    {"address": "https://lava-api.linknode.org", "provider": "Linknode"}, 
+    {"address": "https://lava-api.polkachu.com", "provider": "Polkachu"}, 
+    {"address": "https://lava-mainnet-api.itrocket.net", "provider": "ITRocket"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
@@ -53,8 +37,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

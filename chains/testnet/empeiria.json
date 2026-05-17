@@ -4,16 +4,12 @@
   "registry_name": "Empeiria-Testnet",
   "network_type": "testnet",
   "rpc": [
-    {
-      "address": "https://empeiria-testnet-rpc.itrocket.net",
-      "provider": "Itrocket"
-    }
+    {"address": "https://empeiria-testnet-rpc.linknode.org", "provider": "LinkNode"},
+    {"address": "https://empeiria-testnet-rpc.itrocket.net", "provider": "ITRocket"}
   ],
   "api": [
-    {
-      "address": "https://empeiria-testnet-api.itrocket.net",
-      "provider": "Itrocket"
-    }
+    {"address": "https://empeiria-testnet-api.linknode.org", "provider": "LinkNode"},
+    {"address": "https://empeiria-testnet-api.itrocket.net", "provider": "ITRocket"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
@@ -36,8 +32,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

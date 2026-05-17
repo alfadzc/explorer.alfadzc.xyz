@@ -4,33 +4,15 @@
   "registry_name": "Monolythium-Testnet",
   "network_type": "testnet",
   "rpc": [
-     {
-      "address": "https://rpc-test.monolyth.vinjan-inc.com",
-      "provider": "Vinjan"
-    },  
-     {
-      "address": "https://rpc.testnet.mononodes.xyz",
-      "provider": "Monolythium"
-    },     
-    {
-      "address": "https://rpc-t.mono.nodestake.org",
-      "provider": "Nodestake"
-    }
-  ],
-  "api": [
-     {
-      "address": "https://api-test.monolyth.vinjan-inc.com",
-      "provider": "Vinjan"
-    },      
-    {
-      "address": "https://api.testnet.mononodes.xyz",
-      "provider": "Monolythium"
-    },  
-    {
-      "address": "https://api-t.mono.nodestake.org",
-      "provider": "Nodestake"
-    }
-  ],
+    {"address": "https://rpc-test.monolyth.vinjan-inc.com", "provider": "Vinjan.Inc"},    
+    {"address": "https://rpc-t.mono.nodestake.org", "provider": "NodeStake"},
+    {"address": "https://rpc.testnet.mononodes.xyz", "provider": "Monolythium"}
+   ],
+  "api": [ 
+    {"address": "https://api-test.monolyth.vinjan-inc.com", "provider": "Vinjan.Inc"},    
+    {"address": "https://api-t.mono.nodestake.org", "provider": "NodeStake"},
+    {"address": "https://api.testnet.mononodes.xyz", "provider": "Monolythium"}  
+   ],
   "sdk_version": "0.53.6",
   "coin_type": "60",
   "min_tx_fee": "1000",
@@ -52,8 +34,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

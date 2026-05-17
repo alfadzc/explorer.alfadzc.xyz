@@ -3,34 +3,31 @@
   "chain_id": "bitbadges-1",
   "registry_name": "bitbadges",
   "network_type": "mainnet",
-  "rpc": [
-    {
-      "address": "https://rpc-bitbadges.alfadzc.xyz",
-      "provider": "Alfadzc"
-    }
-  ],
-  "api": [
-    {
-      "address": "https://rest.cosmos.directory/bitbadges",
-      "provider": "Cosmos"
-    },
-    {
-      "address": "https://api-bitbadges.alfadzc.xyz",
-      "provider": "Alfadzc"
-    },     
-     {
-      "address": "https://lcd.bitbadges.io",
-      "provider": "BitBadges"
-    }    
-  ],
-
+  "rpc": [   
+  {"address": "https://rpc-bitbadges.alfadzc.xyz", "provider": "Alfadzc"},
+    {"address": "https://rpc.bitbadges.io", "provider": "Bitbadges"}, 
+    {"address": "https://node.bitbadges.io/rpc", "provider": "Bitbadges"}, 
+    {"address": "https://rpc.cosmos.directory/bitbadges", "provider": "Cosmos.Directory"}, 
+  {"address": "https://bitbadges-rpc.polkachu.com", "provider": "Polkachu"},
+    {"address": "https://bitbadges-mainnet-rpc.luckystar.asia", "provider": "LuckyStar"},  
+  {"address": "https://bitbadges_mainnet_rpc.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"},
+    {"address": "https://rpc-bitbadges.vinjan.xyz", "provider": "Vinjan"}
+   ],
+  "api": [ 
+    {"address": "https://api-bitbadges.alfadzc.xyz", "provider": "Alfadzc"},    
+    {"address": "https://lcd.bitbadges.io", "provider": "BitBadges"},   
+    {"address": "https://node.bitbadges.io/rpc", "provider": "Bitbadges"}, 
+    {"address": "https://rest.cosmos.directory/bitbadges", "provider": "Cosmos.Directory"}, 
+  {"address": "https://bitbadges-api.polkachu.com", "provider": "Polkachu"},  
+    {"address": "https://bitbadges-mainnet-api.luckystar.asia", "provider": "LuckyStar"}, 
+    {"address": "https://bitbadges_mainnet_api.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"}, 
+  {"address": "https://api-bitbadges.vinjan.xyz", "provider": "Vinjan"}                 
+   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
   "min_tx_fee": "1000",
   "addr_prefix": "cosmos",
-
   "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/bitbadges.png",
-
   "assets": [
     {
       "base": "ubadge",
@@ -40,16 +37,19 @@
       "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/bitbadges.png"
     }
   ],
-
   "features": [
-    "dashboard",
-    "governance",
-    "staking",
-    "blocks",
-    "tx",
-    "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+   "dashboard",
+   "governance",
+   "staking",
+   "blocks",
+   "tx",
+   "uptime",
+   "ibc", 
+   "supply", 
+   "parameters", 
+   "consensus", 
+   "cosmwasm", 
+   "state-sync",
+   "widget"
   ]
 }

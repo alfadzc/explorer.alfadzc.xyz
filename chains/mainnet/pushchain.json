@@ -4,24 +4,14 @@
   "registry_name": "Pushchain-Testnet",
   "network_type": "testnet",
   "rpc": [
-    {
-      "address": "https://rpc-t.pushchain.nodestake.org",
-      "provider": "Nodestake"
-    },
-    {
-      "address": "https://rpc-test.pchain.vinjan-inc.com",
-      "provider": "Vinjan"
-    }    
+    {"address": "https://push-testnet-rpc.itrocket.net", "provider": "ITRocket"},    
+    {"address": "https://rpc-t.pushchain.nodestake.org", "provider": "NodeStake"},
+    {"address": "https://rpc-test.pchain.vinjan-inc.com", "provider": "Vinjan.Inc"}  
   ],
   "api": [
-    {
-     "address": "https://api-t.pushchain.nodestake.org",
-     "provider": "Nodestake"
-    },  
-    {
-      "address": "https://api-test.pchain.vinjan-inc.com",
-      "provider": "Vinjan"
-    }
+    {"address": "https://push-testnet-api.itrocket.net", "provider": "ITRocket"},    
+    {"address": "https://api-t.pushchain.nodestake.org", "provider": "NodeStake"},
+    {"address": "https://api-test.pchain.vinjan-inc.com", "provider": "Vinjan.Inc"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "60",
@@ -44,8 +34,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

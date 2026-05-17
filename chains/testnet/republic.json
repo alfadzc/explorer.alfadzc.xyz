@@ -4,21 +4,15 @@
   "registry_name": "Republic-Testnet",
   "network_type": "testnet",
   "rpc": [
-    {
-      "address": "https://rpc-t.republicai.nodestake.org",
-      "provider": "Nodestake"
-    }
+    {"address": "https://republic-testnet-rpc.linknode.org", "provider": "LinkNode"},    
+    {"address": "https://rpc-t.republicai.nodestake.org", "provider": "Nodestake"},
+    {"address": "https://rpc-t.republic.vinjan-inc.com", "provider": "Vinjan.Inc"}
   ],
-  "api": [
-    {
-      "address": "https://api-t.republicai.nodestake.org",
-      "provider": "Nodestake"
-    },
-    {
-      "address": "https://api-t.republic.vinjan-inc.com",
-      "provider": "Vinjan.Inc"
-    }
-  ],
+  "api": [ 
+    {"address": "https://republic-testnet-api.linknode.org", "provider": "LinkNode"},    
+    {"address": "https://api-t.republicai.nodestake.org", "provider": "Nodestake"},
+    {"address": "https://api-t.republic.vinjan-inc.com", "provider": "Vinjan.Inc"}  
+   ],  
   "sdk_version": "0.47.0",
   "coin_type": "60",
   "min_tx_fee": "1000",
@@ -40,8 +34,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

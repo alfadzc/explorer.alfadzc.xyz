@@ -4,16 +4,12 @@
   "registry_name": "CNHO Stables",
   "network_type": "mainnet",
   "rpc": [
-    {
-      "address": "https://rpc.cnho.io",
-      "provider": "Cnho.io"
-    }
+    {"address": "https://rpc.cnho.io", "provider": "Cnho.io"},    
+    {"address": "https://cnhostables_mainnet_rpc.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"}
   ],
   "api": [
-    {
-      "address": "https://api.cnho.io",
-      "provider": "Cnho.io"
-    }
+    {"address": "https://api.cnho.io", "provider": "Cnho.io"},    
+    {"address": "https://cnhostables_mainnet_api.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "118",
@@ -36,8 +32,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }

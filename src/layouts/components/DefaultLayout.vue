@@ -51,7 +51,7 @@ const changeOpen = (index: Number) => {
     sidebarOpen.value = !sidebarOpen.value;
   }
 };
-const showDiscord = window.location.host.search('ping.pub') > -1;
+const showDiscord = true;
 
 function isNavGroup(nav: VerticalNavItems | any): nav is NavGroup {
   return (<NavGroup>nav).children !== undefined;
@@ -90,7 +90,7 @@ const show_ad = computed(() => {
       class="w-64 fixed z-50 left-0 top-0 bottom-0 overflow-auto bg-base-100 border-r border-gray-100 dark:border-gray-700"
       :class="{ block: sidebarShow, 'hidden xl:!block': !sidebarShow }">
       <div class="flex justify-between mt-1 pl-4 py-4 mb-1">
-        <RouterLink to="/" class="flex items-center"> 
+        <RouterLink to="/" class="flex items-center">
           <img class="w-10 h-10 rounded-full" src="../../assets/logo.png" />
           <h1 class="flex-1 ml-3 text-2xl font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Alfadzc</h1>
         </RouterLink>
@@ -170,7 +170,7 @@ const show_ad = computed(() => {
             </div>
             <div
               v-if="index === 0 && dashboard.networkType === NetworkType.Testnet"
-              class="menu bg-base-100 w-full !p-0">  
+              class="menu bg-base-100 w-full !p-0">
             <RouterLink
               class="hover:bg-gray-100 dark:hover:bg-[#373f59] rounded cursor-pointer px-3 py-2 flex items-center"
                :to="`/${blockchain.chainName}/faucet`">
@@ -241,15 +241,19 @@ const show_ad = computed(() => {
           <Icon icon="mdi:web" class="text-xl mr-2" />
           <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">Website</div>
         </a>
+<!-- JIKA MAU AKTIFKAN LINKS: HAPUS TANDA KURUNG KOMENTAR di BAWAH ini -->
+<!-- 
         <a v-if="showDiscord" href="https://discord.com/invite/CmjYVSr6GW" target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]">
           <Icon icon="mdi:discord" class="text-xl mr-2" />
           <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">Discord</div>
         </a>
+-->
+<!-- JIKA MAU AKTIFKAN LINKS: HAPUS TANDA KURUNG KOMENTAR di ATAS ini -->
         <a href="https://github.com/ping-pub/explorer/discussions" target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]">
-          <Icon icon="mdi:github" class="text-xl mr-2" />
-          <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">GitHub</div>
+        class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]">
+        <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
+        <div class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200">FAQ</div>
         </a>
       </div>
     </div>

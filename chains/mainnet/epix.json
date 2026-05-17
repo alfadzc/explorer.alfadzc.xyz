@@ -4,20 +4,12 @@
   "registry_name": "Epix",
   "network_type": "mainnet",
   "rpc": [
-    {
-      "address": "https://rpc.epixchain.com",
-      "provider": "Epix"
-    }
+    {"address": "https://rpc.epixchain.com", "provider": "Epix"},
+    {"address": "https://rpc-epix.vinjan-inc.com", "provider": "Vinjan.Inc"}  
   ],
   "api": [
-    {
-      "address": "https://api.epix.zone",
-      "provider": "Epix"
-    }, 
-    {
-      "address": "https://epix.blocksync.me/api",
-      "provider": "blocksync.me"
-    }
+      {"address": "https://api.epix.zone", "provider": "Epix"},
+    {"address": "https://api-epix.vinjan-inc.com", "provider": "Vinjan.Inc"}
   ],
   "sdk_version": "0.47.0",
   "coin_type": "60",
@@ -40,8 +32,12 @@
     "blocks",
     "tx",
     "uptime",
-    "supply",
-    "parameters",
-    "consensus"
+    "ibc", 
+    "supply", 
+    "parameters", 
+    "consensus", 
+    "cosmwasm", 
+    "state-sync",
+    "widget"
   ]
 }
