@@ -5,18 +5,17 @@
   "coingecko": "shido-2",
   "network_type": "mainnet",  
   "rpc": [
-    {"address": "https://shido-rpc.polkachu.com", "provider": "Polkachu"},
-    {"address": "https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"}, 
-    {"address": "https://rpc.shido.io", "provider": "Shido"},  
-{"address": "https://rpc.shidoscan.com", "provider": "ShidoScan"}              
-  ],
-  "api": [
-    {"address": "https://shido-api.polkachu.com", "provider": "Polkachu"},   
-    {"address": "https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money", "provider": "Whenmoonwhenlambo"}, 
-    {"address": "https://api.shido.io", "provider": "Shido"}, 
-    {"address": "https://rest.shido.io", "provider": "Shido"},
-{"address": "https://swagger.shidoscan.com", "provider": "ShidoScan"} 
-  ],
+     {"address": "https://rpc.mavnode.io", "provider": "Mavnode"},   
+     {"address": "https://shido-rpc.polkachu.com", "provider": "Polkachu"},
+     {"address": "https://rpc.shido.io", "provider": "Shido"},
+     {"address": "https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money", "provider": "WhenLambo"}          
+    ],
+  "api": [ 
+     {"address": "https://rest.mavnode.io", "provider": "Mavnode"},   
+     {"address": "https://shido-api.polkachu.com", "provider": "Polkachu"},
+     {"address": "https://shidoscan.net", "provider": "ShidoScan"},
+     {"address": "https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money", "provider": "WhenLambo"}
+   ],
   "sdk_version": "0.47.0",
   "coin_type": "60",
   "min_tx_fee": "1000",

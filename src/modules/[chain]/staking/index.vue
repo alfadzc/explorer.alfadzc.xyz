@@ -293,7 +293,7 @@ loadAvatars();
             <thead class="bg-base-200">
               <tr>
                 <th scope="col" class="uppercase" style="width: 3rem; position: relative">
-                  {{ $t('staking.rank') }}
+                 {{ $t('staking.rank') }}
                 </th>
                 <th scope="col" class="uppercase">{{ $t('staking.validator') }}</th>
                 <th scope="col" class="text-right uppercase">{{ $t('staking.voting_power') }}</th>
@@ -306,15 +306,14 @@ loadAvatars();
               <tr
                 v-for="({ v, rank, logo }, i) in list"
                 :key="v.operator_address"
-                class="hover:bg-gray-100 dark:hover:bg-[#384059]"
-              >
+                class="hover:bg-gray-100 dark:hover:bg-[#384059]">
                 <!-- � rank -->
                 <td>
                   <div class="text-xs truncate relative px-2 py-1 rounded-full w-fit" :class="`text-${rank}`">
                     <span class="inset-x-0 inset-y-0 opacity-10 absolute" :class="`bg-${rank}`"></span>
-                    {{ i + 1 }}
+                  {{ i + 1 }}
                   </div>
-                </td>
+               </td>
                 <!-- � Validator -->
                 <td>
                   <div class="flex items-center overflow-hidden" style="max-width: 300px">
@@ -327,11 +326,11 @@ loadAvatars();
                           class="object-contain"
                           @error="
                             (e) => {
-                              const identity = v.description?.identity;
-                              if (identity) loadAvatar(identity);
+                             const identity = v.description?.identity;
+                             if (identity) loadAvatar(identity);
                             }
-                          "
-                        />
+                           "
+                          />
                         <Icon v-else class="text-3xl" :icon="`mdi-help-circle-outline`" />
                       </div>
                     </div>
@@ -342,14 +341,13 @@ loadAvatars();
                           :to="{
                             name: 'chain-staking-validator',
                             params: {
-                              validator: v.operator_address,
+                            validator: v.operator_address,
                             },
                           }"
-                          class="font-weight-medium"
-                        >
+                          class="font-weight-medium">
                           {{ v.description?.moniker }}
                         </RouterLink>
-                      </span>
+                       </span>
                       <span class="text-xs">{{ v.description?.website || v.description?.identity || '-' }}</span>
                     </div>
                   </div>
@@ -362,14 +360,14 @@ loadAvatars();
                       {{
                         format.formatToken(
                           {
-                            amount: parseInt(v.tokens).toString(),
-                            denom: staking.params.bond_denom,
+                           amount: parseInt(v.tokens).toString(),
+                           denom: staking.params.bond_denom,
                           },
                           true,
                           '0,0'
                         )
                       }}
-                    </h6>
+                     </h6>
                     <span class="text-xs">{{ format.calculatePercent(v.delegator_shares, staking.totalPower) }}</span>
                   </div>
                 </td>
@@ -391,30 +389,30 @@ loadAvatars();
                     for="delegate"
                     class="btn btn-xs btn-primary rounded-sm capitalize"
                     @click="
-                      dialog.open('delegate', {
-                        validator_address: v.operator_address,
-                      })
-                    "
-                    >{{ $t('account.btn_delegate') }}</label
-                  >
+                     dialog.open('delegate', {
+                     validator_address: v.operator_address,
+                    })
+                   ">{{ $t('account.btn_delegate') }}
+                  </label>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="divider"></div>
-        <div class="flex flex-row items-center">
+       <div class="divider">
+      </div>
+         <div class="flex flex-row items-center">
           <div class="text-xs truncate relative py-2 px-4 rounded-md w-fit text-error mr-2">
-            <span class="inset-x-0 inset-y-0 opacity-10 absolute bg-error"></span>
-            {{ $t('staking.top') }} 33%
+           <span class="inset-x-0 inset-y-0 opacity-10 absolute bg-error"></span>
+           {{ $t('staking.top') }} 33%
           </div>
           <div class="text-xs truncate relative py-2 px-4 rounded-md w-fit text-warning">
             <span class="inset-x-0 inset-y-0 opacity-10 absolute bg-warning"></span>
             {{ $t('staking.top') }} 67%
           </div>
-          <div class="text-xs hidden md:!block pl-2">
-            {{ $t('staking.description') }}
+           <div class="text-xs hidden md:!block pl-2">
+           {{ $t('staking.description') }}
           </div>
         </div>
       </div>
@@ -423,17 +421,9 @@ loadAvatars();
 </template>
 
 <route>
-  {
-    meta: {
-      i18n: 'staking',
-      order: 3
-    }
-  }
+  {meta: {i18n: 'staking', order: 3}}
 </route>
 
 <style>
-.staking-table.table :where(th, td) {
-  padding: 8px 5px;
-  background: transparent;
-}
+.staking-table.table :where(th, td) {padding: 8px 5px; background: transparent;}
 </style>

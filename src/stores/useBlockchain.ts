@@ -63,7 +63,7 @@ export const useBlockchain = defineStore('blockchain', {
           document.body.style.setProperty('--p', `${themeColor}`);
           // document.body.style.setProperty('--p', `${this.current?.themeColor}`);
         } else {
-          document.body.style.setProperty('--p', '237.65 100% 70%');
+          document.body.style.setProperty('--p', '271 81% 56%');
         }
         currNavItem = [
           {
