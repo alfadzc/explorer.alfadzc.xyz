@@ -23,48 +23,46 @@ onMounted(() => {
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
       background: linear-gradient(135deg, #0a0a1a 0%, #0d0d2b 40%, #0a0a1a 100%);
-      transition: opacity 0.5s ease;
-    ">
-      <!-- Border frame -->
+      transition: opacity 0.5s ease;">
+  
+      <!-- BORDER FRAME -->
       <div style="
         position: absolute; inset: 12px;
         border: 1.5px solid rgba(168,85,247,0.5);
         border-radius: 16px;
         box-shadow: 0 0 30px rgba(168,85,247,0.15), inset 0 0 30px rgba(168,85,247,0.05);
-        pointer-events: none;
-      "/>
+        pointer-events: none;"/>
 
-      <!-- Logo container -->
+      <!-- LOGO CONTAINER -->
       <div style="position: relative; width: 220px; height: 220px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
-        <!-- Ring 2 -->
+        <!-- RING 2 -->
         <div class="ring2" style="
           position: absolute; width: 210px; height: 210px;
           border-radius: 50%; border: 1px solid rgba(168,85,247,0.35);
-          top: 0; left: 0;
-        "/>
-        <!-- Ring 1 -->
+          top: 0; left: 0;"/>
+  
+        <!-- RING 1 -->
         <div class="ring1" style="
           position: absolute; width: 160px; height: 160px;
           border-radius: 50%; border: 1.5px solid rgba(168,85,247,0.55);
-          top: 30px; left: 30px;
-        "/>
-        <!-- Coin flip logo -->
+          top: 30px; left: 30px;"/>
+  
+        <!-- COIN FLIP LOGO -->
         <div class="coin-flip" style="
           width: 120px; height: 120px; border-radius: 50%;
           overflow: hidden; border: 3px solid #A855F7;
-          box-shadow: 0 0 30px rgba(168,85,247,0.7), 0 0 60px rgba(168,85,247,0.3);
-        ">
+          box-shadow: 0 0 30px rgba(168,85,247,0.7), 0 0 60px rgba(168,85,247,0.3);">
           <img src="/logo.png" alt="alfadzc logo" style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
       </div>
 
-      <!-- Text -->
+      <!-- TEXT -->
       <div class="fade-in-text" style="text-align: center;">
         <p style="
-          font-size: 13px; letter-spacing: 0.15em;
+          font-size: 16px; letter-spacing: 0.15em;
           color: rgba(255,255,255,1); font-family: monospace;
           display: flex; align-items: center; justify-content: center; gap: 4px;">
-          Please Wait
+           Initializing Network
           <span class="dot1" style="display: inline-block;">•</span>
           <span class="dot2" style="display: inline-block;">•</span>
           <span class="dot3" style="display: inline-block;">•</span>
