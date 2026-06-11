@@ -1,0 +1,43 @@
+{
+  "chain_name": "jaynetwork",
+  "chain_id": "thejaynetwork",
+  "registry_name": "Jay Network",
+  "network_type": "mainnet",
+  "rpc": [
+    {"address": "https://rpc-jay.onenov.xyz", "provider": "OneNov"},
+    {"address": "https://rpc-jaynetwork.vinjan-inc.com", "provider": "Vinjan.Inc"}
+  ],
+  "api": [
+    {"address": "https://api-jay.onenov.xyz", "provider": "OneNov"},
+    {"address": "https://api-jaynetwork.vinjan-inc.com", "provider": "Vinjan.Inc"}
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "jay",
+  "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/jaynetwork.png",
+  "assets": [
+    {
+      "base": "ujay",
+      "symbol": "JAY",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/jaynetwork.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "ibc",
+    "supply",
+    "parameters",
+    "consensus",
+    "cosmwasm",
+    "state-sync",
+    "Widgets"
+  ]
+}
