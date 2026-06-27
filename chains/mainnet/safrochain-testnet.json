@@ -1,5 +1,5 @@
 {
-  "chain_name": "safrochain",
+  "chain_name": "safrochain-testnet",
   "chain_id": "safro-testnet-1",
   "registry_name": "Safrochain-Testnet",
   "network_type": "testnet",
@@ -32,11 +32,11 @@
     "blocks",
     "tx",
     "uptime",
-    "ibc", 
-    "supply", 
-    "parameters", 
-    "consensus", 
-    "cosmwasm", 
+    "ibc",
+    "supply",
+    "parameters",
+    "consensus",
+    "cosmwasm",
     "state-sync",
     "widget"
   ]

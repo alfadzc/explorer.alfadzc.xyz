@@ -1,17 +1,19 @@
 {
   "chain_name": "safrochain",
-  "chain_id": "safro-testnet-1",
-  "registry_name": "Safrochain-Testnet",
-  "network_type": "testnet",
+  "chain_id": "safrochain-1",
+  "registry_name": "Safrochain",
+  "network_type": "mainnet",
   "rpc": [
-    {"address": "https://rpc.testnet.safrochain.com", "provider": "Safrochain"},
-    {"address": "https://safrochain-testnet-rpc.linknode.org", "provider": "LinkNode"}
+    {"address": "https://rpc1.safrochain.network", "provider": "Safrochain Foundation"},
+    {"address": "https://rpc2.safrochain.network", "provider": "Safrochain Foundation"},
+    {"address": "https://rpc.safrochain.nodestake.org", "provider": "NodeStake"}
   ],
   "api": [
-    {"address": "https://rest.testnet.safrochain.com", "provider": "Safrochain"},
-    {"address": "https://safrochain-testnet-api.linknode.org", "provider": "LinkNode"}
+    {"address": "https://api1.safrochain.network", "provider": "Safrochain Foundation"},
+    {"address": "https://api2.safrochain.network", "provider": "Safrochain Foundation"},
+    {"address": "https://api.safrochain.nodestake.org", "provider": "NodeStake"}
   ],
-  "sdk_version": "0.47.0",
+  "sdk_version": "0.50.3",
   "coin_type": "118",
   "min_tx_fee": "1000",
   "addr_prefix": "safro",
@@ -20,7 +22,7 @@
     {
       "base": "usaf",
       "symbol": "SAF",
-      "exponent": "6",
+      "exponent": 6,
       "coingecko_id": "",
       "logo": "https://raw.githubusercontent.com/alfadzc/Alfadzc-Explorer/main/public/assets/safrochain.png"
     }
@@ -32,12 +34,12 @@
     "blocks",
     "tx",
     "uptime",
-    "ibc", 
-    "supply", 
-    "parameters", 
-    "consensus", 
-    "cosmwasm", 
+    "ibc",
+    "supply",
+    "parameters",
+    "consensus",
+    "cosmwasm",
     "state-sync",
-    "widget"
+    "Widgets"
   ]
 }
