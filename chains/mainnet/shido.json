@@ -3,18 +3,14 @@
   "chain_id": "shido_9008-1",
   "registry_name": "shido",
   "coingecko": "shido-2",
-  "network_type": "mainnet",  
+  "network_type": "mainnet",
   "rpc": [
-     {"address": "https://rpc.mavnode.io", "provider": "Mavnode"},   
-     {"address": "https://shido-rpc.polkachu.com", "provider": "Polkachu"},
-     {"address": "https://rpc.shido.io", "provider": "Shido"},
-     {"address": "https://shidochain_mainnet_rpc.chain.whenmoonwhenlambo.money", "provider": "WhenLambo"}          
+     {"address": "https://rpc.mavnode.io", "provider": "Mavnode"}
     ],
-  "api": [ 
-     {"address": "https://rest.mavnode.io", "provider": "Mavnode"},   
-     {"address": "https://shido-api.polkachu.com", "provider": "Polkachu"},
-     {"address": "https://shidoscan.net", "provider": "ShidoScan"},
-     {"address": "https://shidochain_mainnet_api.chain.whenmoonwhenlambo.money", "provider": "WhenLambo"}
+  "api": [
+     {"address": "https://rest.mavnode.io", "provider": "Mavnode"},
+     {"address": "https://api.shido.io", "provider": "Shido"},
+     {"address": "https://shidoscan.net", "provider": "ShidoScan"}
    ],
   "sdk_version": "0.47.0",
   "coin_type": "60",
@@ -37,11 +33,11 @@
     "blocks",
     "tx",
     "uptime",
-    "ibc", 
-    "supply", 
-    "parameters", 
-    "consensus", 
-    "cosmwasm", 
+    "ibc",
+    "supply",
+    "parameters",
+    "consensus",
+    "cosmwasm",
     "state-sync",
     "widget"
   ]
