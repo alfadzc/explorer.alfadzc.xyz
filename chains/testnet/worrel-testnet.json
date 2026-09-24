@@ -1,0 +1,53 @@
+{
+  "chain_name": "worrell-testnet",
+  "chain_id": "worrell-testnet-1",
+  "registry_name": "Worrell-Testnet",
+  "network_type": "testnet",
+  "rpc": [
+    {"address": "https://worrell-testnet-rpc.itrocket.net", "provider": "ITRocket"},
+    {"address": "https://rpc-t.worrell.vinjan-inc.com", "provider": "Vinjan.Inc"},        
+    {"address": "https://worrell-testnet-rpc.nodesync.top", "provider": "NodeSync"},     
+    {"address": "https://rpc-worrell.test.onenov.xyz", "provider": "OneNov"},       
+    {"address": "https://worrellchain-rpctest.codeblocklabs.com", "provider": "CodeBlockLabs"},
+    {"address": "https://worrell-testnet-rpc.bonynode.online", "provider": "BonyNode"},    
+    {"address": "https://t-worrell.rpc.utsa.tech", "provider": "UTSA"},
+    {"address": "https://rpc-worrell.dnsarz.net", "provider": "dnsarz"},
+    {"address": "https://worrel-testnet-rpc.oshvank.xyz", "provider": "OshVanK"},
+    {"address": "https://lightnode-rpc-worrell.grandvalleys.com", "provider": "Grand Valley"}
+  ],
+  "api": [
+    {"address": "https://worrell-testnet-api.itrocket.net", "provider": "ITRocket"},
+    {"address": "https://api-t.worrell.vinjan-inc.com", "provider": "Vinjan.Inc"},    
+    {"address": "https://worrell-testnet-api.nodesync.top", "provider": "NodeSync"}, 
+    {"address": "https://api-worrell.test.onenov.xyz", "provider": "OneNov"},   
+    {"address": "https://worrellchain-apitest.codeblocklabs.com", "provider": "CodeBlockLabs"},            
+    {"address": "https://worrell-testnet-api.bonynode.online", "provider": "BonyNode"},
+    {"address": "https://worrell.api.t.anode.team", "provider": "ANODE.TEAM"}    
+
+  ],
+  "sdk_version": "0.47.0",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "worrell",
+  "logo": "https://cdn.jsdelivr.net/gh/alfadzc/Alfadzc-Explorer@main/public/assets/worrell.png",
+  "assets": [
+    {
+      "base": "uworrell",
+      "symbol": "WORRELL",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "https://cdn.jsdelivr.net/gh/alfadzc/Alfadzc-Explorer@main/public/assets/worrell.png"
+    }
+  ],
+  "features": [
+    "dashboard",
+    "governance",
+    "staking",
+    "blocks",
+    "tx",
+    "uptime",
+    "supply",
+    "parameters",
+    "consensus"
+  ]
+}
